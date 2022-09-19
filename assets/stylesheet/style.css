@@ -1,0 +1,181 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+#navLogout a:hover {
+    background-color: rgb(26, 50, 128);
+    color: white;
+    padding: 10px;
+    border-radius: 7%;
+    border: 1px solid black;
+}
+
+
+nav {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr auto;
+    border: 1px solid red;
+    background-color: rgb(213, 231, 243);
+}
+
+#brand {
+    font-size: 30px;
+    padding: 3px;
+}
+
+#brand span {
+    position: absolute;
+    font-weight: 600;
+    padding: 15px;
+}
+
+li {
+    list-style: none;
+}
+
+
+#navLogout {
+    font-size: 24px;
+    margin-top: 18px;
+    margin-right: 20px;
+}
+
+.card {
+    border: 1px solid red;
+    width: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+#cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+
+.card li {
+    padding: 5px;
+}
+
+#addButton {
+    height: 50px;
+}
+
+#addButton i {
+    float: right;
+    font-size: 35px;
+    padding: 4px;
+    margin-right: 20px;
+}
+
+#addButton i:hover {
+    color: rgba(45, 32, 233, 0.979);
+}
+
+
+
+
+/* modal  */
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: hidden;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+#newEmail,
+#newName,
+#newPhone{
+    width: 300px;
+    padding: 13px;
+}
+#addContact{
+    font-size: 15px;
+    width: 300px;
+    padding: 10px;
+    background-color: rgb(43, 101, 207);
+    border: none;
+    color: white;
+}
+
+#addContact:hover{
+    cursor: pointer;
+    background-color: rgb(8, 39, 97);;
+}
+
+#errorMessage{
+    font-size: 20px;
+    color: red;
+}
+
+.editIcon , .deleteIcon{
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.editIcon:hover{
+    color: rgb(7, 2, 255);
+}
+
+.deleteIcon:hover{
+    color: red;
+}

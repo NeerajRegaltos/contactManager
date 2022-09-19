@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up | Contact Manager</title>
+    <link rel="stylesheet" href="./assets/stylesheet/authStyle.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+            <li>
+                <div id="brand">
+                    <a href="./index.html">
+                        <img src="./assets/images/brand.png" alt="Brand Name" width="60"> <span>Contact
+                            Manager</span>
+                    </a>
+                </div>
+            </li>
+            <li id="navAuth">
+                <a href="./login.html">Log In</a>
+            </li>
+
+            <li id="navAuth">
+                <a href="./signup.html">Sign up</a>
+            </li>
+        </nav>
+    </header>
+
+
+
+    <main>
+
+        <div class="container" style="margin-top: 20px;">
+            <h1 id="heading">Sign up to Your Account</h1>
+            <p id="errorMessage"></p>
+            <form action="">
+                <input type="text" id="fullName" placeholder="Full Name" autofocus autocomplete="off">
+                <br>
+                <input type="email" id="email" placeholder="Email"  autocomplete="off">
+                <br>
+                <input type="number" id="phone" placeholder="Phone"  autocomplete="off">
+                <br>
+                <input type="password" id="password" placeholder="Password" >
+                <br>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" >
+                <br><br>
+                <button type="submit" id="loginBtn">Sign up</button>
+                <br><br>
+
+                <p id="needAccount" style="margin-bottom: 10px;">Already have an account ? <a href="./login.html">Log In</a></p>
+            </form>
+        </div>
+
+    </main>
+
+
+
+<script src="./src/js/signup.js" type="module"></script>
+
+</body>
+
+</html>
