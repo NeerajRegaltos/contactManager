@@ -119,7 +119,7 @@ for (let s of arr) { // it is just traversing array items which are words here .
     }
 
     if (maxi > maximum) {  // see , maxi has only the maximum length of consequetive characters of only one word  one by one  , so here you will take the maximum of the array actually .. getting my point ? in maxi you are just taking the consequtive chars length but in maximum variable you are keeping the max value of the array , so maxi was 3 and maximum is 0 ...so now  
-       
+
         maximum = maxi; // this maximum will become 3 ... after that when maxi will be 6 bcz of "d" then again we will check ... if maxi is greater then again update maximum
 
         tellMeString = s; // and this is the string what we want
@@ -127,6 +127,45 @@ for (let s of arr) { // it is just traversing array items which are words here .
     }
 }
 
-console.log(tellMeString, maximum );
+console.log(tellMeString, maximum);
 // that's it
 
+
+
+
+console.log("===================================================");
+
+let obj = [
+    {
+        firstname: "John",
+        lastname: "Ferguson",
+        gender: "Male",
+        dob: "12/1/2022",
+        id: "1",
+    },
+    {
+        firstname: "Leonardo",
+        lastname: "Mitchell",
+        gender: "Male",
+        dob: "15/1/2022",
+        id: "2",
+    },
+];
+
+
+function howManyProperty(num , objectHere) {
+    for (let o = 0; o < objectHere.length; o++) {
+        let k = Object.keys(objectHere[o]);
+
+        for (let index = num; index < k.length; index++) {
+
+            delete objectHere[o][k[index]];
+            
+        }
+
+    }
+    console.log(objectHere)
+}
+
+
+howManyProperty(3 , obj);

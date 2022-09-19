@@ -30,7 +30,7 @@ loginBtn.addEventListener("click", (e) => {
             if (password.value.trim() === localItem.password) {
                 sessionStorage.setItem("phone", phone.value);
                 sessionStorage.setItem("login", "true");
-                window.location = "http://127.0.0.1:5500/contactManager/index.html";
+                window.location = "http://127.0.0.1:5500/index.html";
             } else {
                 errorMessage.textContent = "Wrong password";
             }
