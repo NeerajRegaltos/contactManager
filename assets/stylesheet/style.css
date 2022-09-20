@@ -90,7 +90,8 @@ li {
 
 /* modal  */
 /* The Modal (background) */
-.modal {
+.modal,
+.modal2 {
     display: none;
     /* Hidden by default */
     position: fixed;
@@ -114,7 +115,7 @@ li {
 }
 
 /* Modal Content */
-.modal-content {
+.modal-content, .modal-content2 {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
@@ -143,11 +144,12 @@ li {
 
 #newEmail,
 #newName,
-#newPhone{
+#newPhone {
     width: 300px;
     padding: 13px;
 }
-#addContact{
+
+#addContact {
     font-size: 15px;
     width: 300px;
     padding: 10px;
@@ -156,26 +158,28 @@ li {
     color: white;
 }
 
-#addContact:hover{
+#addContact:hover {
     cursor: pointer;
-    background-color: rgb(8, 39, 97);;
+    background-color: rgb(8, 39, 97);
+    ;
 }
 
-#errorMessage{
+#errorMessage {
     font-size: 20px;
     color: red;
 }
 
-.editIcon , .deleteIcon{
+.editIcon,
+.deleteIcon {
     float: right;
     cursor: pointer;
     font-size: 20px;
 }
 
-.editIcon:hover{
+.editIcon:hover {
     color: rgb(7, 2, 255);
 }
 
-.deleteIcon:hover{
+.deleteIcon:hover {
     color: red;
 }
