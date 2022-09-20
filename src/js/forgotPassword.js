@@ -14,9 +14,7 @@ let forgotPassword = new Auth("", "", phone, password, confirmPassword, errorMes
 function insertIntoLocalStorage() {
     const localItem = JSON.parse(localStorage.getItem(phone.value));
 
-    console.log(localItem);
-
-    localStorage.setItem(phone.value, JSON.stringify({ name: localItem.name, email: localItem.email, password: password.value }));
+    localStorage.setItem(phone.value, JSON.stringify({ name: localItem.name, email: localItem.email, password: password.value, arr : localItem.arr}));
     console.log("Password changed  Successfully");
 }
 
@@ -44,5 +42,4 @@ loginBtn.addEventListener("click", (e) => {
     }
 
 
-})
-// window.location = "./login.html";
+});
